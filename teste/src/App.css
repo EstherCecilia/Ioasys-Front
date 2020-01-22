@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  background-image: url(fundo2.jpg);
+ }
+
+#App {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #373a47;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: 373a47;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #373a47;
+}
+
+.bm-menu {
+  background: #e7efff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #e7efff;
+}
+
+.bm-item-list {
+  color: #373a47;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
