@@ -2,6 +2,7 @@
 
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import Login from "./Login";
 
 export default props => {
   return (
@@ -10,7 +11,7 @@ export default props => {
         HOME
       </a>
 
-      <a className="menu-item" href="/Login">
+      <a className="menu-item" href={Login}>
         MEU PERFIL
       </a>
 

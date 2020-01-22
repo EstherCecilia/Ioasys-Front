@@ -1,20 +1,11 @@
 import React from "react";
-
 import ReactDOM from "react-dom";
-
 import App from "./App";
-
 import Form from "./Form";
-
 import Login from "./Login";
-
 import * as serviceWorker from "./serviceWorker";
-
 import { Provider } from "react-redux";
-
 import store from "./store";
-
-
 import axios from 'axios';
 
 const Submit = values => {
@@ -32,17 +23,17 @@ ReactDOM.render(
   
 	<Provider store={store}>
           
-{/* <Form
+<Form
         onSubmit={values => {
           console.log(values);
-        }}  /> */}
+        }}  />
  
-     {/*<App />
-      */}
-
+     {/* <App /> */}
+     
+{/* 
  <Login
         onSubmit={Submit}
-      />      
+      />       */}
 </Provider>,
   rootEl
 );
