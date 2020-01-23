@@ -2,6 +2,7 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
+import "./login.css"; 
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -23,8 +24,13 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(3, 0, 2), 
     display: "flex",
     backgroundColor: "#f50057",
-    color:"#fafafa" 
- }
+    color:"#fafafa",
+    margin:"10px"
+ },
+ divSubmit:{display: "-webkit-inline-box",
+  margin: "auto"
+  }
+
 }));
 
 const Form = props => {
@@ -119,7 +125,7 @@ const Form = props => {
         </div>
       </div>
       <div>
-        <div>
+        <div className={classes.divSubmit}>
       <Button type="submit" color="primary" className={classes.submit} disabled={pristine || submitting}>
             Submit
           </Button>

@@ -3,18 +3,14 @@ import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "./atoms/TextField";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
 import Link from "@material-ui/core/Link";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
 // import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { Field, reduxForm } from "redux-form";
-
+import { reduxForm } from "redux-form";
 import "./login.css";
+
 
 function Copyright() {
   return (
@@ -58,7 +54,7 @@ const Login = props => {
   const { handleSubmit } = props;
   const classes = useStyles();
   return (
-    <Container component="main" maxWidth="xs">
+    <Container component="main" maxWidth="xs" style={{backgroundColor: "#00dad9"}}>
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>

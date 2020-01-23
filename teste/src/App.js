@@ -4,5 +4,5 @@ import SideBar from "./sidebar";
 import "./App.css";
 
 export default function App() {
-  return <SideBar />;
+  return <h1></h1>
 }
