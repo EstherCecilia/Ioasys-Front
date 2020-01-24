@@ -2,7 +2,6 @@ import React from "react";
 import { Field, reduxForm } from "redux-form";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import "./login.css"; 
 
 const useStyles = makeStyles(theme => ({
   paper: {

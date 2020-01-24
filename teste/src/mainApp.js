@@ -5,9 +5,8 @@ import Login from "./Login";
 import { slide as Menu } from "react-burger-menu";
 import store from "./store";
 import { Switch, Route, Link } from "react-router-dom";
-import { Provider } from 'react-redux'
-
-
+import { Provider } from 'react-redux';
+import "./App.css"; 
 
 const Submit = values => {
   // axios.get(`https://jsonplaceholder.typicode.com/users`)
@@ -23,7 +22,7 @@ class MainApp extends Component {
     render(){
 
         return(
-            <div>
+            <div id="App">
                  <Menu>
       <Link className="menu-item" to="/page1">
         HOME
@@ -44,7 +43,7 @@ CADASTRAR      </Link>
       </Link>
 
     </Menu>
-            
+            <div id="page-wrap">
       
     
   <Provider store={store}>
@@ -54,7 +53,7 @@ CADASTRAR      </Link>
         <Route path="/page3" component={() => <Form onSubmit={Submit}/>}/>
             
     </Switch>
-    </Provider>
+    </Provider></div>
 
 </div>
         );
